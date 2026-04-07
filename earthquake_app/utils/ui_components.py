@@ -164,13 +164,8 @@ def page_header(title: str, subtitle: str = "", icon: str = "🌍"):
             try {{
                 window.top.postMessage({{
                     type: 'SYNC_SIDEBAR',
-                    page: '{page_id}'
-                }}, '*');
-            }} catch(e) {{}}
-            try {{
-                window.parent.parent.postMessage({{
-                    type: 'SYNC_SIDEBAR',
-                    page: '{page_id}'
+                    page: '{page_id}',
+                    source: '{page_id}'
                 }}, '*');
             }} catch(e) {{}}
         </script>
