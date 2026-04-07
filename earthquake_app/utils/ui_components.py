@@ -150,6 +150,7 @@ def page_header(title: str, subtitle: str = "", icon: str = "🌍"):
     # Map title to page_id for index.html sidebar sync
     page_id_map = {
         "Tổng Quan": "tong-quan",
+        "Cấu tạo địa lý": "cau-tao",
         "Xu Hướng & Rủi Ro": "xu-huong",
         "Dư chấn & Tương quan": "du-chan",
         "Bất thường & Xác suất": "bat-thuong",
